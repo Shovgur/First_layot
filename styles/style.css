@@ -47,6 +47,23 @@
   text-decoration: none;
   width: 100px;
   text-transform: uppercase;
+  position: relative;
+}
+
+.item_inside:after{
+display: block;
+position: absolute;
+left: 0;
+width: 0;
+background-color: grey;
+content: "";
+transition: width 0.3s ease-out;
+height: 2px;
+margin-top: -4px;
+}
+
+.item_inside:hover:after{
+  width: 100%;
 }
 
 .item_inside_2 {
@@ -95,6 +112,11 @@
   padding: 30px 45px;
   cursor: pointer;
   margin-top: 82px;
+}
+
+.button:hover{
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .icon_block_all {
@@ -165,6 +187,8 @@
 .img {
   width: 25%;
 }
+
+
 
 .person_block {
   width: 100%;
@@ -322,6 +346,11 @@
   justify-content: center;
   margin-top: 47.71px;
   margin-right: 115px;
+}
+
+.button_download:hover{
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .footer {
