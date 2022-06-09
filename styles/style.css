@@ -284,7 +284,7 @@
 .testimonials_photo {
   width: 53%;
   height: 490px;
-
+  background-image: url(../img/testimonials_bg.png);
 }
 
 .testimonials_block {
