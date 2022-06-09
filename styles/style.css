@@ -429,22 +429,6 @@
 }
 
 
-.img_footer_twitter:hover{
-  opasity: 0.8;
-  cursor: pointer;
-}
-.img_footer_linkedin:hover{
-  opasity: 0.8;
-  cursor: pointer;
-}
-.img_footer_facebook:hover{
-  opasity: 0.8;
-  cursor: pointer;
-}
-
-
-
-
 .footer_about {
   width: 370px;
   height: 112.71px;
