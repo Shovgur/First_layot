@@ -420,6 +420,11 @@
   margin-top: 48px;
 }
 
+.footer_share_icon:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 .footer_about {
   width: 370px;
   height: 112.71px;
