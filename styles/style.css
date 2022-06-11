@@ -422,6 +422,21 @@
   margin-top: 48px;
 }
 
+.img_footer_facebook:hover{
+opacity: 0.8;
+cursor: pointer;
+}
+
+.img_footer_linkedin:hover{
+opacity: 0.8;
+cursor: pointer;
+}
+
+.img_footer_twitter:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 
 .footer_about {
   width: 370px;
@@ -469,11 +484,3 @@
 }
 
 
-@media(max-width: 1199px){
-  .header{
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-
-}
