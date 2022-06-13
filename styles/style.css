@@ -200,6 +200,12 @@
   justify-content: center;
 }
 
+@media (max-width: 1024px){
+  .{
+   width:1024px ;
+  }
+}
+
 .person {
   width: 270px;
   height: 619px;
