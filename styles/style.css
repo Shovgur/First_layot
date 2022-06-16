@@ -200,9 +200,11 @@
   justify-content: center;
 }
 
-@media (max-width: 1024px){
-  .{
-   width:1024px ;
+@media (min-width: 320px){
+  .icon_block_all{
+   display: flex;
+   flex-direction: column;
+  
   }
 }
 
