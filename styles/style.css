@@ -113,24 +113,29 @@
     margin-top: 14px;
   }
   .button{
-    width: 100%;
+    width:  280px;
     height: 100%;
   }
   .about{
     height: 100%;
     width: 320px;
   }
+.menu__box{
+  height: 570px;
+}
+
 }
 
 .navigator {
   height: 100%;
+    width: 100%;
+    max-width: 700px;
 }
 
 .header_nav_list {
-  display: flex;
-  list-style: none;
-  height: 63px;
-  width: 670px;
+    display: flex;
+    height: 100%;
+    list-style: none;
 }
 
 .header_nav_list_item {
@@ -143,29 +148,36 @@
   height: 134px;
 }
 
-.item_inside {
-  color: white;
-  text-decoration: none;
-  width: 100px;
-  text-transform: uppercase;
-  position: relative;
-}
 
-.item_inside:after {
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 0;
-  background-color: grey;
-  content: "";
-  transition: width 0.3s ease-out;
-  height: 2px;
-  margin-top: -4px;
-}
+  .item_inside::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 30%;
+    right: 80%;
+    height: 2px;
+    background-color: silver;
+    opacity: 0;
+    transition: all 0.5s;
+  }
 
-.item_inside:hover:after {
-  width: 100%;
-}
+  .item_inside:hover::after {
+    opacity: 1;
+    right: -20px;
+  }
+
+  .item_inside {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+
+  .item_inside:active::after {
+    background-color: silver;
+  }
 
 .item_inside_2 {
   margin-left: 27px;
@@ -216,19 +228,23 @@
 }
 
 .button:hover {
-  opacity: 0.8;
+  background-color: #E71414;
   cursor: pointer;
 }
 
+.icon_block{
+  text-align: center;
+  flex-basis: 30%;
+  padding: 0 54px;
+  margin: 38px 0
+}
+
 .icon_block_all {
-  margin-top: 116px;
-  margin-bottom: 116px;
-  margin-left: 170px;
-  margin-right: 170px;
-  height: 717px;
-  width: 1170px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 50px 3px;
+  justify-content: center;
+  margin-left: 140px  ;
 }
 
 .icon_block_second {
@@ -472,7 +488,7 @@
 }
 
 .button_download:hover {
-  opacity: 0.8;
+  background-color: #E71414;
   cursor: pointer;
 }
 
@@ -588,6 +604,13 @@ cursor: pointer;
   width: 370px;
   height: 42px;
   text-align: center;
+}
+
+span{
+  color: var(--color-white);
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
 }
 
 
